@@ -1285,10 +1285,10 @@ section,
 }
 
 .home-about .image-gallery .secondary-image {
-  position: absolute;
-  bottom: -1.5rem; /* Position ajustée */
-  right: -1.5rem;
-  width: 50%; /* Largeur réduite */
+  position: fixed;
+  top: 1rem; /* Position ajustée */
+  /* right: -1.5rem; */
+  width: 100%; /* Largeur réduite */
   border-radius: 16px;
   overflow: hidden;
   border: 4px solid var(--surface-color);
@@ -1297,7 +1297,7 @@ section,
 }
 
 .home-about .image-gallery .secondary-image img {
-  width: 100%;
+  width: 80%;
   height: 160px; /* Hauteur réduite */
   object-fit: cover;
   display: block;
@@ -2927,11 +2927,7 @@ section,
   color: var(--accent-color);
 }
 
-.why-us .cta-buttons .btn.btn-outline-primary:hover {
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-  transform: translateY(-2px);
-}
+
 
 .why-us .stats-section .stat-card {
   background-color: var(--background-color);
@@ -3147,7 +3143,7 @@ section,
 }
 
 .call-to-action .cta-buttons .btn.btn-primary:hover {
-  background-color: color-mix(in srgb, var(--accent-color), black 15%);
+  /* background-color: color-mix(in srgb, var(--accent-color), black 15%); */
   border-color: color-mix(in srgb, var(--accent-color), black 15%);
   transform: translateY(-2px);
 }
@@ -3159,7 +3155,7 @@ section,
 }
 
 .call-to-action .cta-buttons .btn.btn-outline:hover {
-  background-color: var(--accent-color);
+  /* background-color: var(--accent-color); */
   color: var(--contrast-color);
   transform: translateY(-2px);
 }
@@ -6405,7 +6401,7 @@ section,
 }
 
 .services .cta-section .cta-buttons .btn-primary:hover {
-  background: color-mix(in srgb, var(--accent-color), #000000 15%);
+  /* background: color-mix(in srgb, var(--accent-color), #000000 15%); */
   transform: translateY(-2px);
   color: var(--contrast-color);
 }
@@ -6417,7 +6413,7 @@ section,
 }
 
 .services .cta-section .cta-buttons .btn-secondary:hover {
-  background: var(--accent-color);
+  /* background: var(--accent-color); */
   color: var(--contrast-color);
 }
 
@@ -9725,8 +9721,8 @@ section,
 }
 
 .cta-buttons .btn-primary:hover {
-  background: transparent;
-  color: white;
+  background: var(--accent-color);
+  color: var(--background-color);
   border-color: white;
   transform: translateY(-2px);
 }
@@ -9738,7 +9734,7 @@ section,
 }
 
 .cta-buttons .btn-outline:hover {
-  background: white;
+  background: var(--nav-dropdown-hover-color);
   color: #c8ad7f;
   transform: translateY(-2px);
 }
